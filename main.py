@@ -65,7 +65,7 @@ bot = Client(
 premium_data = {}
 
 # Replace with your Telegram channel ID where you want to send logs
-CHANNEL_ID = "-1002160323618"
+CHANNEL_ID = "-1002409997113"
 
 
 #--------------------my plan ---------------------------------------------------------------
@@ -149,7 +149,7 @@ async def give_premium_cmd_handler(client, message: Message):
                 )
                 
                 await client.send_message(
-                    chat_id=-1002160323618,  # Replace with your actual channel ID
+                    chat_id=-1002409997113,  # Replace with your actual channel ID
                     text=f"#Added_Premium\n\n👤 ᴜꜱᴇʀ : {user.mention}\n⚡ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : <code>{time}</code>\n\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}",
                     disable_web_page_preview=True
                 )
