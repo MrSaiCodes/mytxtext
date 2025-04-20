@@ -1,0 +1,17 @@
+services:
+  - type: worker
+    name: my-worker
+    env: docker
+    dockerfilePath: ./Dockerfile
+    startCommand: python3 main.py
+    envVars:
+      - key: API_ID
+        value: "23454876"  # Replace with your actual API ID
+      - key: API_HASH
+        value: "b42626ee535fcaf915232af564a95bea"  # Replace with your actual API hash
+      - key: BOT_TOKEN
+        value: "7705829246:AAGkrOC-1RiFyhqndeuva45RIbUGs54HfRI"  # Replace with your actual bot token
+      - key: MONGO_DB_URI
+        value: "mongodb+srv://saik:F@v@NHpt@7TFAb9@cluster0.brflswq.mongodb.net/?retryWrites=true&w=majority"  # Replace with your actual MongoDB URI
+      - key: AUTH_USERS
+        value: "662494886"  # Add any necessary user identifiers or other environment variables
