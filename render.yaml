@@ -3,7 +3,7 @@ services:
     name: my-worker
     env: docker
     dockerfilePath: ./Dockerfile
-    startCommand: python3 main.py
+    startCommand: python3 app.py
     envVars:
       - key: API_ID
         value: "23454876"  # Replace with your actual API ID
