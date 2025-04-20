@@ -6,9 +6,9 @@ import os
 from pymongo import MongoClient
 
 class Config(object):
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7221760137:AAGvD4ICBuaFufzjsl2woOlHOotxQLlM5xU")
-    API_ID = int(os.environ["API_ID", 15958423]
-    API_HASH = os.environ["API_HASH", "0f38f0c37cec744bccb074b5180e37b0"]
-    AUTH_USERS = "5128979564"
-    MONGO_URI = os.environ.get("MONGO_DB_URI", "your_mongo_db_uri")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7705829246:AAGkrOC-1RiFyhqndeuva45RIbUGs54HfRI")
+    API_ID = int(os.environ["API_ID", 23454876]
+    API_HASH = os.environ["API_HASH", "b42626ee535fcaf915232af564a95bea"]
+    AUTH_USERS = "662494886"
+    MONGO_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://saik:F@v@NHpt@7TFAb9@cluster0.brflswq.mongodb.net/?retryWrites=true&w=majority")
     
