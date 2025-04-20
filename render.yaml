@@ -1,9 +1,12 @@
 services:
-  - type: web
-    name: flask-app
-    env: docker
-    dockerfilePath: ./Dockerfile
-    startCommand: python3 app.py
+  - name: flask-app
+    type: web
+    runtime: python
+    envVars:
+      - key: PORT
+        value: 10000
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
     envVars:
       - key: API_ID
         value: "23454876"  # Replace with your actual API ID
