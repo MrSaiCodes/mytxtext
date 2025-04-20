@@ -1,6 +1,6 @@
 services:
-  - type: worker
-    name: my-worker
+  - type: web
+    name: flask-app
     env: docker
     dockerfilePath: ./Dockerfile
     startCommand: python3 app.py
